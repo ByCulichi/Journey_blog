@@ -13,6 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hace que la página sea responsive (se adapte a diferentes tamaños de pantalla como celulares y tablets) -->
 
+    <meta name="description" content="Personal blog about Byculichi journey">
+    <!-- Proporciona una descripción breve del contenido de la página para motores de búsqueda -->
+
+    <meta name="author" content="Christian - ByCulichi">
+        <!-- Indica el autor del documento -->
+
+
+
     <title>My Blog</title>
     <!-- El título que aparece en la pestaña del navegador -->
 
@@ -64,20 +72,20 @@
                 <p>
                     The reason I started working was to start gaining experience, practice my english with customer from the US and start getting money to buy things that I wanted at that time.
                 </p>
-        0'
+
                 <p>
                     After working at Teleperformance for a while, I decided to look for new opportunities to grow professionally. I found a job at a tech company where I could use my English skills more effectively and work on interesting projects.
                 </p>
 
           
-
             <figure>
             <!-- <figure> agrupa una imagen con su descripción -->
-                <img src="Chihuahua Illustration.png" alt="Rooney" width="100" height="80">
+                <img src="Chihuahua Illustration.png" alt="Rooney" width="100" height="80" loading="lazy">
                 <!-- <img> muestra una imagen. src es la ruta del archivo, alt es texto alternativo si no carga -->
                 <figcaption>This is me at my first job</figcaption>
                 <!-- <figcaption> es la leyenda o descripción de la imagen -->
             </figure>
+
 
             <section>
             <!-- <section> agrupa contenido relacionado sobre un tema específico -->
@@ -121,7 +129,7 @@
 
 
 
-    <aside id="contact">
+    <section id="contact">
     <!-- <aside> contiene contenido relacionado pero secundario, como una barra lateral -->
         <h2>Contact me</h2>
         <!-- <h2> es un subtítulo de segundo nivel -->
@@ -132,32 +140,35 @@
                 <p>
                     <label for="name">Name:</label>
                     <!-- <label> asocia un texto descriptivo a un campo de formulario -->
-                    <input type="text" id="name" name="user_name">
+                    <input type="text" id="name" name="user_name" required placeholder="Tu nombre">
                 </p>
 
                 <p>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="email" name="user_email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" required placeholder="Tu@email">
                 </p>
 
                 <p>
                     <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
+                    <textarea id="msg" name="user_message" required placeholder="Escribe tu mensaje aqui..."></textarea>
                 </p>
 
                 <button type="submit">Send</button>
                 <!-- <button> crea un botón interactivo. type="submit" envía el formulario -->
 
-        <ul>
-            <li><a href="mailto:your-email@example.com">culichi2603@gmail.com</a></li>
-            <!-- mailto: crea un enlace que abre el cliente de correo electrónico -->
-
-        </ul>
-
         </fieldset>
         </form>
-    </aside>
+    </section>
 
+    <aside>
+    <!-- <aside> contiene contenido relacionado pero secundario, como una barra lateral -->
+        <h2>Tags</h2>
+            <ul>
+                 <li>HTML</li>
+                <li>Web development</li>
+                <li>Career</li>
+            </ul>
+    </aside>
 
 
 
@@ -165,8 +176,21 @@
 
     <footer>
     <!-- Este <footer> es el pie de página de toda la página web -->
-    <p>Copyright &copy; 2025 Mi Blog Asombroso</p>
+    <p>Copyright &copy; 2025 ByCulichi journey</p>
     <!-- &copy; es un código especial para mostrar el símbolo de copyright © -->
+
+     <p>If you'd like to get in touch, feel free to send me a message using the form below.</p>
+
+
+         <ul>
+            <li><a href="mailto:your-email@example.com">culichi2603@gmail.com</a></li>
+            <!-- mailto: crea un enlace que abre el cliente de correo electrónico -->
+        </ul>
+
+    <p>
+        <a href="#home">⬆️ Back to top</a>
+        <!-- Enlace que lleva de vuelta al inicio de la página -->
+    </p>
   </footer>
 
 </body>
